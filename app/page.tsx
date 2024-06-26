@@ -1,14 +1,18 @@
-import Footer from "@/components/Footer";
-import { Hero } from "@/components/Hero";
-import Navbar from "@/components/Navbar";
-import NewHero from "@/components/NewHero";
+import Head from 'next/head';
+import Navbar from '@/components/Navbar';
+import NewHero from '@/components/NewHero';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
     <main>
-      <Navbar/>
-      <NewHero/>
-      <Footer/>
+      <Head>
+        <title>Lets Study</title>
+      </Head>
+
+      <Navbar />
+      <NewHero />
+      <Footer />
     </main>
   );
 }
